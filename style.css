@@ -17,7 +17,6 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
-
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -282,11 +281,23 @@ a:hover {
     padding-right: 0;
     padding-left: 0;
 }
+#bloc-1-hero{
+    width: 100%;
+    height: 400px;
+    background-image: url("img/la-chouette-agence-banniere.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 #bloc-1-hero h1 {
     font-size: 32px;
 }
-
+#bloc-1-hero img{
+    width: 10%;
+    height: auto;
+}
 .navbar {
     margin-bottom: 0;
     z-index: 1;
@@ -302,7 +313,7 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 200px;
+    max-height: 40px;
     margin: 0 5px 0 0;
     display: inline;
 }
@@ -355,21 +366,29 @@ a:hover {
     float: left;
 }
 
-.nav-invert .navbar-header,
+.nav-invert,
 .nav-invert .navbar-brand {
     float: right;
     position: relative;
     z-index: 2;
 }
+header{
+    box-sizing: border-box;
+    padding:0 3% 0 3%;
+}
+.navbar-header{
+    width: 50%;
+    height: auto;
+}
 
+.site-navigation{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
 @media (min-width: 768px) {
-    .site-navigation {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
-    }
+    
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
@@ -391,9 +410,6 @@ a:hover {
         display: inline-block;
     }
     .nav-center .site-navigation {
-        position: relative;
-        width: 100%;
-        right: 0;
         margin-right: 0px;
         margin-top: 20px;
     }
@@ -765,7 +781,28 @@ h4 {
 .bgc-white {
     background-color: #FFFFFF;
 }
-
+.row-h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.row-avis1, .row-avis2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.row-avis1{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 130%;
+}
+.row-avis2{
+    font-weight: bold;
+    font-size: 100%;
+}
+footer .row{
+    margin-top:3%;
+}
 .bgc-dark-slate-blue {
     background-color: #364577;
 }
@@ -817,9 +854,6 @@ h4 {
     background-image: url("img/lines-h2-bg.png");
 }
 
-.bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
-}
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
