@@ -285,6 +285,7 @@ a:hover {
     width: 100%;
     height: 400px;
     background-image: url("img/la-chouette-agence-banniere.jpg");
+    opacity:1.5;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -378,7 +379,7 @@ header{
 }
 .navbar-header{
     width: 50%;
-    height: auto;
+    height: 100%;
 }
 
 .site-navigation{
@@ -386,6 +387,49 @@ header{
     height: auto;
     display: flex;
     justify-content: flex-end;
+}
+.site-navigation a {
+    text-decoration: none;
+}
+.page3_partenaire{
+    width: 100%;
+    height: 200px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3976C;
+    background-image: url(img/texture-paper.png);
+}
+.partenaires{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 160%;
+}
+.annuaires{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    background-image: url(img/texture-paper.png);
+    background-color: #29345A;
+}
+.annuaire1, .annuaire2, .annuaire3{
+    width: 30%;
+    height: auto;
+    text-align: justify;
+    font-size: 150%;
+    box-sizing: border-box;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+}
+.annuaire1 a, .annuaire2 a, .annuaire3 a{
+    color: white;
 }
 @media (min-width: 768px) {
     
@@ -524,8 +568,11 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    font-size: 16px;
 }
-
+.form-group{
+    margin-bottom: 10px;
+}
 .scrollToTop {
     width: 40px;
     height: 40px;
@@ -542,7 +589,7 @@ button {
 }
 
 .showScrollTop {
-    font-size: 14px;
+    font-size: 16px;
     opacity: 1;
 }
 
@@ -693,7 +740,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -726,7 +773,7 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
