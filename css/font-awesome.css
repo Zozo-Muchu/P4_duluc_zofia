@@ -800,11 +800,13 @@
 }
 
 .fa-twitter:before {
+    color: #202020;
     content: "\f099"
 }
 
 .fa-facebook-f:before,
 .fa-facebook:before {
+    color: #202020;
     content: "\f09a"
 }
 
@@ -1576,6 +1578,7 @@
 }
 
 .fa-instagram:before {
+    color: #202020;
     content: "\f16d"
 }
 
@@ -1636,6 +1639,7 @@
 }
 
 .fa-dribbble:before {
+    color: #202020;
     content: "\f17d"
 }
 
