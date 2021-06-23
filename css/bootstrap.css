@@ -2010,10 +2010,6 @@ pre code {
     margin-left: auto
 }
 
-.row {
-    margin-right: -15px;
-    margin-left: -15px
-}
 
 .col-lg-1,
 .col-lg-10,
@@ -4844,7 +4840,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav>li>a {
     position: relative;
     display: block;
-    padding: 10px 15px
+    padding: 1px 5px
 }
 
 .nav>li>a:focus,

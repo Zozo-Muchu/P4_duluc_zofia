@@ -414,8 +414,6 @@ header{
     height: auto;
     margin-bottom: 5%;
     border-radius: 20px;
-    background-image: url(img/texture-paper.png);
-    background-color: #29345A;
 }
 .annuaire1, .annuaire2, .annuaire3{
     width: 30%;
@@ -425,11 +423,86 @@ header{
     box-sizing: border-box;
     margin-top: 5%;
     margin-bottom: 5%;
-    color: white;
+
 }
-.annuaire1 a, .annuaire2 a, .annuaire3 a{
-    color: white;
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .b-parallax {
+        background-attachment: scroll;
+    }
 }
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .b-parallax {
+        background-attachment: scroll;
+    }
+    .annuaires{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bloc {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .bloc.full-width-bloc,
+    .bloc-tile-2.full-width-bloc .container,
+    .bloc-tile-3.full-width-bloc .container,
+    .bloc-tile-4.full-width-bloc .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .annuaires{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .navbar .nav {
+        max-width: 80%
+    }
+    .nav-center.navbar .nav {
+        max-width: 100%
+    }
+}
+
+
+@media (max-width: 991px) {
+    .container {
+        width: 100%;
+    }
+    .b-parallax {
+        background-attachment: scroll;
+    }
+    .page-container,
+    #hero-bloc {
+        overflow-x: hidden;
+        position: relative;
+    }
+    .bloc {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .bloc-group,
+    .bloc-group .bloc {
+        display: block;
+        width: 100%;
+    }
+    .bloc-fill-screen .fill-bloc-top-edge,
+    .bloc-fill-screen .fill-bloc-bottom-edge {
+        padding: 0 20px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 @media (min-width: 768px) {
     
     .nav > li .dropdown-menu a,
@@ -568,6 +641,7 @@ button {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
     font-size: 16px;
+    width: 95%;
 }
 .form-group{
     margin-bottom: 10px;
@@ -713,9 +787,10 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #202020;!important;
 }
-
+a{
+    color: #202020!important;
+}
 .container {
     max-width: 1000px;
 }
@@ -830,6 +905,7 @@ h4 {
 .row-h2{
     display: flex;
     justify-content: center;
+    text-align: center;
     margin-top: 5%;
 }
 .row-avis1, .row-avis2{
@@ -911,71 +987,11 @@ footer .row{
     background-image: url("img/image-de-presentation.bmp");
 }
 
-@media (max-width: 1024px) {
-    .bloc {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .bloc.full-width-bloc,
-    .bloc-tile-2.full-width-bloc .container,
-    .bloc-tile-3.full-width-bloc .container,
-    .bloc-tile-4.full-width-bloc .container {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-
-@media (max-width: 992px) and (min-width: 768px) {
-    .navbar .nav {
-        max-width: 80%
-    }
-    .nav-center.navbar .nav {
-        max-width: 100%
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
-@media (max-width: 991px) {
-    .container {
-        width: 100%;
-    }
-    .b-parallax {
-        background-attachment: scroll;
-    }
-    .page-container,
-    #hero-bloc {
-        overflow-x: hidden;
-        position: relative;
-    }
-    .bloc {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .bloc-group,
-    .bloc-group .bloc {
-        display: block;
-        width: 100%;
-    }
-    .bloc-fill-screen .fill-bloc-top-edge,
-    .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding: 0 20px;
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
 
 @media (max-width: 767px) {
+    .annuaire1, .annuaire2, .annuaire3{
+        font-size: 100%;
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -1112,17 +1128,14 @@ footer .row{
         width: 180px;
         height: 320px;
     }
+    .bloc-mob-center-text {
+        text-align: center;
+    }
 }
 
 @media (max-width: 400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
-    }
-}
-
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
     }
 }
